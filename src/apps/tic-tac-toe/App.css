@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Noto+Sans&family=Roboto&display=swap');
+
+
+#magicmatch{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+
+.tic-box {
+    font-family: 'Fredoka', Courier, monospace;
+    background-color: white;
+    border: none;
+    border-radius: 10%;
+    box-shadow: 0px 0px 8px #888;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 3em;
+    margin: 0.5rem;
+    font-weight: bold;
+    line-height: 5rem;
+}
+
+
+.tic-box:hover {
+    box-shadow: 0px 0px 15px #888;
+}
+
+.x {
+    color: rgb(255, 70, 37);
+}
+
+.o {
+    color: rgb(44, 135, 255);
+}
+
+.tic-board {
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    place-items: center;
+    justify-content: center;
+}
+
+.scoreBoard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 16.5rem;
+    font-size: 1.5em;
+    background-color: white;
+    margin: 2rem auto;
+    box-shadow: 0px 0px 8px #888;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.score {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.x-score {
+    color: rgb(255, 70, 37);
+    border-bottom: 5px solid rgb(255, 70, 37);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.o-score {
+    color: rgb(44, 135, 255);
+    border-bottom: 5px solid rgb(44, 135, 255);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.inactive {
+    border-bottom: 5px solid transparent;
+}
+
+.reset-btn {
+    display: block;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(44, 135, 255);
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+}

@@ -1,0 +1,22 @@
+export const projects = [
+  {
+    title: 'Calculator',
+    path: 'calc',
+    image: '/imgs/calculator.jpg',
+  },
+  {
+    title: 'MagicMatch',
+    path: 'magic-match',
+    image: './imgs/magicmatch.png',
+  },
+  {
+    title: 'Reviews',
+    path: 'reviews',
+    image: './imgs/reviews.png',
+  },
+  {
+    title: 'Tic Tac Toe',
+    path: 'tic-tac-toe',
+    image: './imgs/tictactoe.png',
+  },
+];

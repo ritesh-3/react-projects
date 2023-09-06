@@ -1,0 +1,95 @@
+#calculator {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: #f79505;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.calc_container {
+    width: 80vw;
+    max-width: 400px;
+    margin: auto;
+    background: #ffff;
+    padding: 2rem;
+    border-radius: 12px;
+
+}
+
+.buttonBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.calc_button {
+    background: #e9f0f4;
+    height: 3.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #242424;
+    border: none;
+    font-size: 1.5rem;
+
+}
+
+.calc_button:hover {
+    border: 2px dotted #242424;
+}
+
+.equals_btn {
+    background: #4bd086;
+    grid-column: 3/5;
+}
+
+.opt_btn {
+    background: #f79505;
+}
+
+.auto-fit-text-area-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.8rem;
+}
+
+.auto-fit-text-area {
+    width: 100%;
+    /* Adjust the width as needed */
+    resize: none;
+    /* Disable textarea resizing */
+    overflow: hidden;
+    /* Hide text overflow */
+    border: none;
+    /* margin: 1rem; */
+    background: transparent;
+    outline: none;
+    text-align: right;
+    font-weight: 600;
+}
+
+.auto-fit-text-area:focus {
+    outline: none;
+}
+
+.calc-sign {
+    font-size: 24px;
+    height: 16px;
+}
+
+.calc-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.MagicMatch {
+  height: 100vh;
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  background: #1b1523;
+  color: #fff;
+}
+
+.MagicMatch .flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+
+.turns-box {
+  border: 2px solid white;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.magic-wrapper {
+  max-width: 860px;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  margin: auto;
+}
+
+.MagicMatch button {
+  background: none;
+  border: 2px solid #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+  width: fit-content;
+}
+
+.MagicMatch button:hover {
+  background: #c23866;
+  color: #fff;
+}
+
+.card-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.magic-card {
+  position: relative;
+}
+
+.magic-card img {
+  width: 80%;
+  display: block;
+  border: 2px solid #ffff;
+  border-radius: 6px;
+}
+
+.magic-card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+
+}
+
+
+.magic-card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+@media screen and (max-width:480px) {
+  .magic-wrapper {
+    justify-content: center;
+    height: 100%;
+  }
+  .card-grid{
+    grid-template-columns: repeat(3, 1fr);
+  } 
+}
