@@ -27,8 +27,7 @@ const Loadable = (Component) => (props) => {
 };
 
 const Routes = projects.map((project) => {
-    const appPath = "/src/apps/" + project.path
-    const LoadableComponent = Loadable(lazy(() => import(  /* @vite-ignore */ appPath)))
+    const LoadableComponent = Loadable(lazy(() => import(`../apps/${project.path}/index.js`)))
     return {
         path: project.path,
         element: <LoadableComponent />
@@ -39,6 +38,7 @@ Routes.push({
     path: "/",
     element: <Container />
 })
+
 
 Routes.push({
     path: "*",

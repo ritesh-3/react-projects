@@ -13,6 +13,7 @@ export const projects = [
     title: 'Reviews',
     path: 'reviews',
     image: './imgs/reviews.png',
+
   },
   {
     title: 'Tic Tac Toe',
