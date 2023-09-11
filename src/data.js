@@ -24,4 +24,9 @@ export const projects = [
     path: 'questions',
     image: './imgs/questions.png',
   },
+  {
+    title: 'Color picker',
+    path: 'clr-picker',
+    image: './imgs/colorPicker.png',
+  },
 ];
