@@ -3,6 +3,7 @@ import { useRoutes } from 'react-router-dom'
 import { projects } from '../data';
 import Container from './Container';
 import BoxLoader from './BoxLoader';
+import ErrorPage from './ErrorPage';
 
 const Loadable = (Component) => (props) => {
     const [loading, setLoading] = useState(true);
@@ -26,7 +27,7 @@ const Loadable = (Component) => (props) => {
 };
 
 const Routes = projects.map((project) => {
-    const appPath = "../apps/" + project.path
+    const appPath = "/src/apps/" + project.path
     const LoadableComponent = Loadable(lazy(() => import(  /* @vite-ignore */ appPath)))
     return {
         path: project.path,
@@ -35,8 +36,13 @@ const Routes = projects.map((project) => {
 })
 
 Routes.push({
-    path: "*",
+    path: "/",
     element: <Container />
+})
+
+Routes.push({
+    path: "*",
+    element: <ErrorPage />
 })
 
 

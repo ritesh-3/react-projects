@@ -18,7 +18,7 @@ const Hero = () => {
                         <AiOutlineArrowRight />
                     </button>
                 </div>
-                <div className="img-container">
+                <div className="hero-img-container">
                     <img className="img" src={"/imgs/hero.svg"} alt="Hero Image" />
                 </div>
             </div>
