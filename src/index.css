@@ -308,13 +308,19 @@ body {
   background: var(--grey-200);
 }
 
+.box-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%
+}
+
 .hero {
   min-height: 40vh;
   background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 5rem; */
+  padding: 2rem 0px;
 }
 
 .img-container {

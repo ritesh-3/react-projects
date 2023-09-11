@@ -1,11 +1,25 @@
-import { Suspense, lazy } from 'react'
+import { Suspense, lazy, useEffect, useState } from 'react'
 import { useRoutes } from 'react-router-dom'
 import { projects } from '../data';
 import Container from './Container';
+import BoxLoader from './BoxLoader';
 
 const Loadable = (Component) => (props) => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const delay = setTimeout(() => {
+            setLoading(false);
+        }, 500);
+
+        return () => clearTimeout(delay);
+    }, []);
+
+    if (loading) {
+        return <BoxLoader />;
+    }
     return (
-        <Suspense fallback={"Loading..."}>
+        <Suspense fallback={<BoxLoader />}>
             <Component {...props} />
         </Suspense>
     );
