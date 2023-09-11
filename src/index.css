@@ -10,7 +10,9 @@
 
 html {
   font-size: 100%;
-} /*16px*/
+}
+
+/*16px*/
 
 :root {
   /* colors */
@@ -72,9 +74,11 @@ body {
   line-height: 1;
   color: var(--textColor);
 }
+
 p {
   margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -89,23 +93,28 @@ h5 {
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 5rem); /* Large heading */
+  font-size: clamp(2rem, 5vw, 5rem);
+  /* Large heading */
 }
 
 h2 {
-  font-size: clamp(1.5rem, 3vw, 3rem); /* Medium heading */
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  /* Medium heading */
 }
 
 h3 {
-  font-size: clamp(1.25rem, 2.5vw, 2.5rem); /* Small heading */
+  font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+  /* Small heading */
 }
 
 h4 {
-  font-size: clamp(1rem, 2vw, 2rem); /* Extra small heading */
+  font-size: clamp(1rem, 2vw, 2rem);
+  /* Extra small heading */
 }
 
 h5 {
-  font-size: clamp(0.875rem, 1.5vw, 1.5rem); /* Tiny heading */
+  font-size: clamp(0.875rem, 1.5vw, 1.5rem);
+  /* Tiny heading */
 }
 
 /* BIGGER FONTS */
@@ -129,7 +138,7 @@ h5 {
   font-size: clamp(1rem, 2vw, 2rem);
 }
  */
- 
+
 
 .text {
   margin-bottom: 1.5rem;
@@ -144,6 +153,7 @@ small,
 a {
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -154,6 +164,7 @@ ul {
   display: block;
   object-fit: cover;
 }
+
 /* buttons */
 
 .btn {
@@ -169,18 +180,22 @@ ul {
   text-transform: capitalize;
   display: inline-block;
 }
+
 .btn:hover {
   background: var(--primary-700);
   box-shadow: var(--shadow-3);
 }
+
 .btn-hipster {
   color: var(--primary-500);
   background: var(--primary-200);
 }
+
 .btn-hipster:hover {
   color: var(--primary-200);
   background: var(--primary-700);
 }
+
 .btn-block {
   width: 100%;
 }
@@ -197,10 +212,12 @@ ul {
   color: var(--red-dark);
   background: var(--red-light);
 }
+
 .alert-success {
   color: var(--green-dark);
   background: var(--green-light);
 }
+
 /* form */
 
 .form {
@@ -212,6 +229,7 @@ ul {
   padding: 2rem 2.5rem;
   margin: 3rem auto;
 }
+
 .form-label {
   display: block;
   font-size: var(--small-text);
@@ -219,6 +237,7 @@ ul {
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
+
 .form-input,
 .form-textarea {
   width: 100%;
@@ -235,15 +254,18 @@ ul {
 .form-textarea {
   height: 7rem;
 }
+
 ::placeholder {
   font-family: inherit;
   color: var(--grey-400);
 }
+
 .form-alert {
   color: var(--red-dark);
   letter-spacing: var(--letterSpacing);
   text-transform: capitalize;
 }
+
 /* alert */
 
 @keyframes spinner {
@@ -285,30 +307,37 @@ PROJECT CSS
 body {
   background: var(--grey-200);
 }
+
 .hero {
   min-height: 40vh;
   background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
+  /* padding: 5rem; */
 }
+
 .img-container {
   display: none;
 }
+
 .hero-center {
   width: 90vw;
   max-width: var(--max-width);
 }
+
 .hero-title h2 {
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
+
 .hero-title p {
   line-height: 2;
   max-width: 35em;
-  color: var(--grey-600);
+  margin: 2rem 0px;
+  color: var(--grey-700);
 }
+
 @media (min-width: 992px) {
   .hero-center {
     display: grid;
@@ -316,10 +345,12 @@ body {
     place-items: center;
     gap: 4rem;
   }
+
   .img-container {
     display: block;
   }
 }
+
 /* 
 ============= 
 PROJECTS 
@@ -329,6 +360,7 @@ PROJECTS
 .projects {
   padding: 5rem 0;
 }
+
 .projects-center {
   width: 90vw;
   max-width: var(--max-width);
@@ -337,6 +369,7 @@ PROJECTS
   display: grid;
   gap: 2rem;
 }
+
 .project {
   background: var(--white);
   display: block;
@@ -344,6 +377,7 @@ PROJECTS
   box-shadow: var(--shadow-2);
   transition: var(--transition);
 }
+
 .project:hover {
   transform: scale(1.05);
   box-shadow: var(--shadow-4);
@@ -361,11 +395,42 @@ PROJECTS
   color: var(--grey-700);
 }
 
+.explore-projects {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  padding: 1rem 1.5rem;
+  background: #60DBFB;
+  color: var(--black);
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: all ease-in-out 0.3s;
+}
+
+.explore-projects:hover {
+  background: transparent;
+  border: 2px solid #60DBFB;
+  color: #60DBFB;
+}
+
 @media (min-width: 768px) {
+  .hero {
+    padding: 4rem;
+  }
+
+  .explore-projects {
+    font-size: xx-large;
+  }
+
   .projects-center {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (min-width: 992px) {
   .projects-center {
     grid-template-columns: 1fr 1fr 1fr;
@@ -376,85 +441,233 @@ PROJECTS
 /***********8 Utility Classes ***********/
 
 /* Margin Utilities */
-.m-0 { margin: 0; }
-.m-1 { margin: 0.25rem; }
-.m-2 { margin: 0.5rem; }
-.m-3 { margin: 1rem; }
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 1rem;
+}
+
 /* Add more margin classes as needed */
 
 /* Padding Utilities */
-.p-0 { padding: 0; }
-.p-1 { padding: 0.25rem; }
-.p-2 { padding: 0.5rem; }
-.p-3 { padding: 1rem; }
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
 /* Add more padding classes as needed */
 
 
 /* Margin Utilities */
-.mt-0 { margin-top: 0; }
-.mt-1 { margin-top: 0.25rem; }
-.mt-2 { margin-top: 0.5rem; }
-.mt-3 { margin-top: 1rem; }
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
 /* Add more margin classes as needed */
 
-.mr-0 { margin-right: 0; }
-.mr-1 { margin-right: 0.25rem; }
-.mr-2 { margin-right: 0.5rem; }
-.mr-3 { margin-right: 1rem; }
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 1rem;
+}
+
 /* Add more margin classes as needed */
 
-.mb-0 { margin-bottom: 0; }
-.mb-1 { margin-bottom: 0.25rem; }
-.mb-2 { margin-bottom: 0.5rem; }
-.mb-3 { margin-bottom: 1rem; }
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
 /* Add more margin classes as needed */
 
-.ml-0 { margin-left: 0; }
-.ml-1 { margin-left: 0.25rem; }
-.ml-2 { margin-left: 0.5rem; }
-.ml-3 { margin-left: 1rem; }
+.ml-0 {
+  margin-left: 0;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-3 {
+  margin-left: 1rem;
+}
+
 /* Add more margin classes as needed */
 
 /* Padding Utilities */
-.pt-0 { padding-top: 0; }
-.pt-1 { padding-top: 0.25rem; }
-.pt-2 { padding-top: 0.5rem; }
-.pt-3 { padding-top: 1rem; }
+.pt-0 {
+  padding-top: 0;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-3 {
+  padding-top: 1rem;
+}
+
 /* Add more padding classes as needed */
 
-.pr-0 { padding-right: 0; }
-.pr-1 { padding-right: 0.25rem; }
-.pr-2 { padding-right: 0.5rem; }
-.pr-3 { padding-right: 1rem; }
+.pr-0 {
+  padding-right: 0;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-3 {
+  padding-right: 1rem;
+}
+
 /* Add more padding classes as needed */
 
-.pb-0 { padding-bottom: 0; }
-.pb-1 { padding-bottom: 0.25rem; }
-.pb-2 { padding-bottom: 0.5rem; }
-.pb-3 { padding-bottom: 1rem; }
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 1rem;
+}
+
 /* Add more padding classes as needed */
 
-.pl-0 { padding-left: 0; }
-.pl-1 { padding-left: 0.25rem; }
-.pl-2 { padding-left: 0.5rem; }
-.pl-3 { padding-left: 1rem; }
+.pl-0 {
+  padding-left: 0;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-3 {
+  padding-left: 1rem;
+}
+
 /* Add more padding classes as needed */
 /* Responsive Margin and Padding Utilities */
 @media (min-width: 640px) {
+
   /* Responsive Margin Classes */
-  .sm\:m-1 { margin: 0.25rem; }
-  .sm\:m-2 { margin: 0.5rem; }
-  .sm\:m-3 { margin: 1rem; }
+  .sm\:m-1 {
+    margin: 0.25rem;
+  }
+
+  .sm\:m-2 {
+    margin: 0.5rem;
+  }
+
+  .sm\:m-3 {
+    margin: 1rem;
+  }
+
   /* Add more responsive margin classes as needed */
 
   /* Responsive Padding Classes */
-  .sm\:p-1 { padding: 0.25rem; }
-  .sm\:p-2 { padding: 0.5rem; }
-  .sm\:p-3 { padding: 1rem; }
+  .sm\:p-1 {
+    padding: 0.25rem;
+  }
+
+  .sm\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .sm\:p-3 {
+    padding: 1rem;
+  }
+
   /* Add more responsive padding classes as needed */
-  .sm\:mt-1 { margin-top: 0.25rem; }
-  .sm\:mt-2 { margin-top: 0.5rem; }
-  .sm\:mt-3 { margin-top: 1rem; }
+  .sm\:mt-1 {
+    margin-top: 0.25rem;
+  }
+
+  .sm\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .sm\:mt-3 {
+    margin-top: 1rem;
+  }
+
   /* Add more responsive margin classes as needed */
 
 }
