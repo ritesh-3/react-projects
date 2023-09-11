@@ -19,7 +19,7 @@ const Calculator = () => {
                 <section >
                     <div className='title m-3'>
                         <h2>Calculator</h2>
-                        <div className='underline'></div>
+                        <div className='calc_underline'></div>
                     </div>
                     <div className='calc_container'>
                         <Screen />

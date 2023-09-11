@@ -7,7 +7,7 @@ const Reviews = () => {
       <section className='review-container'>
         <div className='title'>
           <h2>Our Reviews</h2>
-          <div className='underline'></div>
+          <div className='rev_underline'></div>
         </div>
         <Review />
       </section>

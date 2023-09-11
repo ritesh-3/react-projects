@@ -19,4 +19,9 @@ export const projects = [
     path: 'tic-tac-toe',
     image: './imgs/tictactoe.png',
   },
+  {
+    title: 'Accordion',
+    path: 'questions',
+    image: './imgs/questions.png',
+  },
 ];

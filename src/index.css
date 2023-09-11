@@ -300,8 +300,8 @@ body {
   width: 90vw;
   max-width: var(--max-width);
 }
-.hero-title h1 {
-  margin-bottom: 2rem;
+.hero-title h2 {
+  margin-bottom: 1.5rem;
   font-weight: 700;
 }
 .hero-title p {
