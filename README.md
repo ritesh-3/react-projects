@@ -20,7 +20,7 @@ This repository contains a collection of basic React projects. These projects ar
 
 You can view a live demo of these projects at the following URL:
 
-[LIVE_DEMO](https://react-projects-git-main-ritesh-3.vercel.app/)
+[LIVE_DEMO](https://react-projects-git-main-ritesh-3.vercel.app/){:target="_blank"}
 
 ## Getting Started
 
@@ -32,13 +32,13 @@ To run any of these projects locally, follow these steps:
 
 ### Installation
 
-Clone this repository to your local machine.
+- Clone this repository to your local machine.
 
-Navigate to the project you want to explore.
+- Navigate to the project you want to explore.
 
-Intsall the project dependencies using npm or yarn
+- Intsall the project dependencies using npm or yarn
 
-Run the local server and explore
+- Run the local server and explore
  
 ## Acknowledgments
 
