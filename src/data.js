@@ -10,18 +10,18 @@ export const projects = [
     image: './imgs/magicmatch.png',
   },
   {
+    title: 'Tic Tac Toe',
+    path: 'tic-tac-toe',
+    image: './imgs/tictactoe.png',
+  },
+  {
     title: 'Reviews',
     path: 'reviews',
     image: './imgs/reviews.png',
 
   },
   {
-    title: 'Tic Tac Toe',
-    path: 'tic-tac-toe',
-    image: './imgs/tictactoe.png',
-  },
-  {
-    title: 'Accordion',
+    title: 'FAQ',
     path: 'questions',
     image: './imgs/questions.png',
   },
