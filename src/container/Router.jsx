@@ -27,7 +27,7 @@ const Loadable = (Component) => (props) => {
 };
 
 const Routes = projects.map((project) => {
-    const LoadableComponent = Loadable(lazy(() => import(`../apps/${project.path}/index.js`)))
+    const LoadableComponent = Loadable(lazy(() => import(`../apps/${project.path.toLowerCase()}/index.js`)))
     return {
         path: project.path,
         element: <LoadableComponent />
