@@ -20,7 +20,7 @@ This repository contains a collection of basic React projects. These projects ar
 
 You can view a live demo of these projects at the following URL:
 
-[LIVE_DEMO](https://react-projects-git-main-ritesh-3.vercel.app/){:target="_blank"}
+[LIVE_DEMO](https://react-projects-git-main-ritesh-3.vercel.app/)
 
 ## Getting Started
 
