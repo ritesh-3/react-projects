@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import { FaFileDownload } from 'react-icons/fa';
-import { AiOutlineClose } from 'react-icons/Ai';
 
 
 
@@ -119,7 +118,7 @@ function InvoiceModal(props) {
                         className="invoice-sec-btn dflex align-center gap-1"
                         onClick={closeModal}
                     >
-                        <AiOutlineClose />
+                        <span>X</span>
                         Close
                     </button>
                     <button
