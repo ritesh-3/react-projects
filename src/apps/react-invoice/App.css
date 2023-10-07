@@ -1,0 +1,446 @@
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    /* primary/main color */
+    --clr-primary-5: hsl(205, 78%, 60%);
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-5);
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1;
+    }
+}
+
+#invoice {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.invoice-container {
+    width: 90vw;
+    margin: 2rem;
+    display: flex;
+
+}
+
+.section1 {
+    width: 75%;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.section2 {
+    width: 25%;
+    padding: 2rem;
+}
+
+.gap-1 {
+    gap: 0.5rem;
+}
+
+.dflex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex-row {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.line {
+    border-top: 1px solid var(--clr-grey-8);
+}
+
+.m-20 {
+    margin: 20px
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.input-suffix {
+    background: var(--clr-green-dark);
+    color: var(--clr-white);
+    padding: 6px;
+    border-radius: 0 4px;
+}
+
+.input-box {
+    /* width: 100px; */
+    background: var(--clr-grey-10);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.input-box2 {
+    background: var(--clr-white);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+
+
+.input-box:focus {
+    outline: 2px solid var(--clr-primary-8);
+}
+
+.input-box2:focus {
+    outline: 2px solid var(--clr-green-light);
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-10 {
+    width: 10;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.text-grey {
+    color: var(--clr-grey-6);
+}
+
+/* Base styles */
+.invoice-item {
+    width: 100%;
+}
+
+.invoice-item table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.invoice-item table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+}
+
+.invoice-item table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.invoice-item .delete-button {
+    cursor: pointer;
+}
+
+.editable-field {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px 0;
+}
+
+.editable-field input {
+    width: 100%;
+    background: var(--clr-grey-10);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.editable-field input:focus {
+    outline: 2px solid var(--clr-primary-8);
+}
+
+.editable-field .leading {
+    margin-right: 10px;
+}
+
+.editable-field .leading-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.del-btn {
+    background: transparent;
+    border: none;
+    color: var(--clr-red-light);
+}
+
+.del-btn :hover {
+    cursor: pointer;
+    color: var(--clr-red-dark);
+}
+
+.invoice-primary-btn {
+    padding: 0.8rem;
+    border-radius: 4px;
+    background: var(--clr-green-light);
+    border: none;
+    color: var(--clr-white);
+    font-weight: bold;
+}
+.invoice-sec-btn  {
+    padding: 0.8rem;
+    border-radius: 4px;
+    background: var(--clr-red-light);
+    border: none;
+    color: var(--clr-white);
+    font-weight: bold;
+}
+
+.invoice-total-box {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: var(--clr-white);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-modal-total-box {
+    padding: 0.3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--clr-grey-10);
+}
+
+.invoice-primary-btn:hover {
+    cursor: pointer;
+    background: var(--clr-green-dark);
+}
+.invoice-sec-btn:hover {
+    cursor: pointer;
+    background: var(--clr-red-dark);
+}
+
+.bg-green {
+    background: var(--clr-green-light);
+}
+
+.invoice-grand-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: var(--clr-white);
+    background: var(--clr-green-light);
+}
+
+
+/* Modal css */
+.custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: opacity 0.2s;
+    font-size: small;
+}
+
+.invoice-modal-container {
+    margin-top: 1rem;
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.invoice-modal-header {
+   margin: 1rem 0
+}
+
+/* Modal css */
+
+
+@media screen and (max-width: 800px) {
+    .invoice-modal-container{
+        width: 95vw;
+    }
+    .ml-1 {
+        margin-left: 0.1rem;
+    }
+
+    .invoice-container {
+        width: 100vw;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .section1 {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .section2 {
+        width: 100%;
+        padding: 2rem;
+    }
+}

@@ -30,4 +30,9 @@ export const projects = [
     path: 'clr-picker',
     image: './imgs/colorPicker.png',
   },
+  {
+    title: 'React Invoice',
+    path: 'react-invoice',
+    image: './imgs/react-invoice.png',
+  },
 ];

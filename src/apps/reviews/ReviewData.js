@@ -1,40 +1,39 @@
 const reviews = [
   {
     id: 1,
-    name: 'susan smith',
-    job: 'web developer',
+    name: 'Vishal Sharma',
+    job: 'Web Developer',
     image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
+      'https://media.istockphoto.com/id/613557584/photo/portrait-of-a-beautifull-smiling-man.jpg?s=612x612&w=0&k=20&c=hkCg5CrmTKOApePbPOyo1U9GexEfIJOJqoLXJIvcN8E=',
     text:
-      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+      "I recently had the pleasure of working with this fantastic team of developers on a web project. Vishal's coding skills are impeccable, and he played a pivotal role in bringing our vision to life. Highly recommend!",
   },
   {
     id: 2,
-    name: 'anna johnson',
-    job: 'web designer',
+    name: 'Rahul',
+    job: 'Web Designer',
     image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
+      'https://media.istockphoto.com/id/1361217779/photo/portrait-of-happy-teenage-boy-at-park.jpg?s=612x612&w=0&k=20&c=yGHZLPu6UWwoj2wazbbepxmjl29MS1Hr2jV3N0FzjyI=',
     text:
-      'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
+      'The design skills are unmatched! He transformed our website into a work of art.His attention to detail and ability to capture the essence of our brand is truly remarkable.Thank you, Rahul!',
   },
   {
     id: 3,
-    name: 'peter jones',
-    job: 'intern',
+    name: 'Sanju',
+    job: 'Intern',
     image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
+      'https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwbWFufGVufDB8fDB8fHww&w=1000&q=80',
     text:
-      'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+      'I had the privilege of working alongside Sanju on a recent project. Despite being an intern, she exceeded all expectations. Her fresh perspective and dedication to learning made a significant impact on our team. The future looks bright for Sanju!',
   },
   {
     id: 4,
-    name: 'bill anderson',
-    job: 'the boss',
+    name: 'Kavita',
+    job: 'The Boss',
     image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
+      'https://i.pinimg.com/originals/09/ee/97/09ee9790e4a873be73302693a56a9bf6.jpg',
     text:
-      'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+      "I couldn't be prouder of our team's achievements under Kavita's leadership. Her visionary ideas and unwavering commitment to excellence drive us forward. Kavita truly is the boss, and her impact on our success is undeniable.",
   },
 ];
-
 export default reviews;

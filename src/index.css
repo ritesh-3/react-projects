@@ -200,6 +200,7 @@ ul {
   width: 100%;
 }
 
+
 /* alerts */
 .alert {
   padding: 0.375rem 0.75rem;
@@ -444,7 +445,7 @@ PROJECTS
   }
 
   .explore-projects {
-    font-size: xx-large;
+    font-size: x-large;
   }
 
   .projects-center {
